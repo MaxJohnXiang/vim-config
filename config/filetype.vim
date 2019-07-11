@@ -138,6 +138,7 @@ let g:markdown_fenced_languages = [
 " Folding {{{
 " augroup: a
 " function: f
+"
 let g:vimsyn_folding = 'af'
 let g:tex_fold_enabled = 1
 let g:xml_syntax_folding = 1
