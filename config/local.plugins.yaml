@@ -1,0 +1,6 @@
+- repo: honza/vim-snippets
+
+- repo: jiangmiao/auto-pairs
+  on_event: InsertEnter
+
+
