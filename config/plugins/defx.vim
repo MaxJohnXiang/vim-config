@@ -17,7 +17,7 @@ function! s:defx_toggle_tree() abort
 	if defx#is_directory()
 		return defx#do_action('open_or_close_tree')
 	endif
-	return defx#do_action('multi', ['drop', 'quit'])
+	return defx#do_action('multi', ['drop'])
 endfunction
 
 " Close defx if it's the only buffer left in the window
