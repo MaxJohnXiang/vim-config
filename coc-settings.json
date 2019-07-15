@@ -1,0 +1,31 @@
+{
+    "tsserver.enable": true,
+    "typescript.preferences.noSemicolons": true,
+    "typescript.suggest.enabled": true,
+    "javascript.preferences.noSemicolons": true,
+    "javascript.preferences.quoteStyle": "single",
+    "html.enable": true,
+    "html.filetypes": ["html", "php", "handlebars", "razor"],
+    "html.format.enable": true,
+    "html.suggest.html5": true,
+    "python.linting.enabled": true,
+    "tsserver.log": "verbose",
+    "python.jediEnabled": false,
+    "python.autoUpdateLanguageServer": true,
+    "languageserver": {
+        "intelephense": {
+            "command": "intelephense",
+            "args": ["--stdio"],
+            "filetypes": ["php"],
+            "initializationOptions": {
+                "storagePath": "/tmp/intelephense"
+            }
+        },
+        "golang": {
+          "command": "gopls",
+          "args": [],
+          "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
+          "filetypes": ["go"]
+        }
+    }
+}
