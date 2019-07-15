@@ -355,6 +355,8 @@
 
 - repo: neoclide/coc.nvim
   build: yarn install --frozen-lockfile
+  on_event: InsertEnter
+
 # ==========================================
 # Denite
 # ------
