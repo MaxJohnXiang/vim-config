@@ -78,6 +78,14 @@
     let g:gfm_syntax_highlight_emoji = 0
     let g:gfm_syntax_enable_filetypes = ['markdown']
 
+- repo: iamcco/markdown-preview.nvim
+  on_ft: markdown
+  build: cd app & yarn install
+  hook_source: |
+    let g:mkdp_auto_start = 0
+
+
+
 # Javascript related
 - repo: pangloss/vim-javascript
   on_ft: [ javascript, jsx, javascript.jsx ]
@@ -127,6 +135,7 @@
     let g:go_highlight_string_spellcheck = 0
     let g:go_highlight_variable_declarations = 0
     let g:go_highlight_variable_assignments = 0
+    let g:go_fmt_command = "goimports"
 
 # Python related
 - { repo: vim-python/python-syntax, on_ft: python }
